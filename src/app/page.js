@@ -1,95 +1,48 @@
-import Image from 'next/image'
 import styles from './page.module.css'
+import Image from 'next/image'
 
-export default function Home() {
+
+function Home () {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className={styles.main} id="main_content">
+      <h1>
+      <svg className={styles.mainPageTitle} width="504" height="60" viewBox="0 0 504 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <title>AlphaRedux Logo</title>
+      <path d="M11.76 42.2L14.16 35.8H38.96L41.36 42.2H11.76ZM26.4 15.64L16.96 37.88L16.32 39.32L8 59H0.4L26.4 0.199999L52.4 59H44.8L36.64 39.8L36 38.2L26.4 15.64ZM59.2125 3H66.0125V52.6H88.0125V59H59.2125V3ZM95.2281 3H102.028V59H95.2281V3ZM98.9881 9.4V3H110.428C114.055 3 117.281 3.69333 120.108 5.08C122.988 6.41333 125.255 8.33333 126.908 10.84C128.615 13.3467 129.468 16.3333 129.468 19.8C129.468 23.2133 128.615 26.2 126.908 28.76C125.255 31.2667 122.988 33.2133 120.108 34.6C117.281 35.9333 114.055 36.6 110.428 36.6H98.9881V30.2H110.428C114.055 30.2 116.988 29.32 119.228 27.56C121.521 25.8 122.668 23.2133 122.668 19.8C122.668 16.3333 121.521 13.7467 119.228 12.04C116.988 10.28 114.055 9.4 110.428 9.4H98.9881ZM142.816 31.8V25.4H181.216V31.8H142.816ZM176.656 3H183.456V59H176.656V3ZM139.056 3H145.856V59H139.056V3ZM201.604 42.2L204.004 35.8H228.804L231.204 42.2H201.604ZM216.244 15.64L206.804 37.88L206.164 39.32L197.844 59H190.244L216.244 0.199999L242.244 59H234.644L226.484 39.8L225.844 38.2L216.244 15.64ZM283.041 31.4H290.641L310.641 59H302.241L283.041 31.4ZM273.041 3H279.841V59H273.041V3ZM276.801 9V3H288.241C291.867 3 295.094 3.69333 297.921 5.08C300.801 6.41333 303.067 8.33333 304.721 10.84C306.427 13.3467 307.281 16.3333 307.281 19.8C307.281 23.2133 306.427 26.2 304.721 28.76C303.067 31.2667 300.801 33.2133 297.921 34.6C295.094 35.9333 291.867 36.6 288.241 36.6H276.801V30.6H288.241C290.641 30.6 292.747 30.1733 294.561 29.32C296.427 28.4667 297.867 27.24 298.881 25.64C299.947 24.04 300.481 22.0933 300.481 19.8C300.481 17.5067 299.947 15.56 298.881 13.96C297.867 12.36 296.427 11.1333 294.561 10.28C292.747 9.42667 290.641 9 288.241 9H276.801ZM321.566 59V52.6H349.806V59H321.566ZM321.566 9.4V3H349.806V9.4H321.566ZM321.566 31.8V25.4H348.206V31.8H321.566ZM317.806 3H324.606V59H317.806V3ZM361.791 3H368.591V59H361.791V3ZM378.591 59H365.551V52.2H378.591C381.737 52.2 384.617 51.72 387.231 50.76C389.844 49.7467 392.084 48.3333 393.951 46.52C395.817 44.6533 397.257 42.4133 398.271 39.8C399.284 37.1867 399.791 34.2533 399.791 31C399.791 27.7467 399.284 24.8133 398.271 22.2C397.257 19.5867 395.817 17.3733 393.951 15.56C392.084 13.6933 389.844 12.28 387.231 11.32C384.617 10.3067 381.737 9.8 378.591 9.8H365.551V3H378.591C384.031 3 388.857 4.17333 393.071 6.52C397.284 8.86666 400.591 12.1467 402.991 16.36C405.391 20.52 406.591 25.4 406.591 31C406.591 36.6 405.391 41.5067 402.991 45.72C400.591 49.88 397.284 53.1333 393.071 55.48C388.857 57.8267 384.031 59 378.591 59ZM415.766 3H422.566V40.6C422.566 44.44 423.606 47.5333 425.686 49.88C427.766 52.2267 430.806 53.4 434.806 53.4C438.806 53.4 441.846 52.2267 443.926 49.88C446.006 47.5333 447.046 44.44 447.046 40.6V3H453.846V40.6C453.846 43.3733 453.392 45.9333 452.486 48.28C451.632 50.6267 450.352 52.6533 448.646 54.36C446.992 56.0667 444.992 57.4 442.646 58.36C440.299 59.32 437.686 59.8 434.806 59.8C431.926 59.8 429.312 59.32 426.966 58.36C424.619 57.4 422.592 56.0667 420.886 54.36C419.232 52.6533 417.952 50.6267 417.046 48.28C416.192 45.9333 415.766 43.3733 415.766 40.6V3ZM494.244 3H502.244L485.684 29.64L503.444 59H495.444L482.244 35.56L468.644 59H460.644L478.884 29.64L462.644 3H470.644L482.324 23.72L494.244 3Z" fill="white"/>
+      </svg>
+      </h1>
+
+      <div className={styles.homepagePicker}>
+        {/* redo images and base on choke album make column styled game cards */}
+        <div className={styles.homepageSlide}>
+        <Image src='/images/Gray_TheGameSplash.jpg' width={450} height={600} alt="Gray - The Game"/>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <div className={styles.homepageSlide}>
+        <Image src='/images/TheAnomaly_TheGameSplash.png' width={450} height={600} alt="The Anomaly - The Game"/>
+        </div>
+        <div className={styles.homepageSlide}>
+        <Image src='/images/SevenMinutes_TheGame.PNG' width={450} height={600} alt="Seven Minutes - The Game"/>
+        
+        </div>
+        <div className={styles.homepageSlide}>
+        <Image src='/images/Nocturnal_TheAlbum.jpg' width={450} height={600} alt="Nocturnal - Music Album by Space-22"/>
+        </div>
+        <div className={styles.homepageSlide}>
+        <Image src='/images/Gray_TheGameSplash.jpg' width={450} height={600} alt="Gray - The Game"/>
+        </div>
+        <div className={styles.homepageSlide}>
+        <Image src='/images/TheAnomaly_TheGame_2.jpg' width={450} height={600} alt="The Anomaly - The Game"/>
+        </div>
+        <div className={styles.homepageSlide}>
+        <Image src='/images/Choke_album.jpg' width={450} height={600} alt="Choke - Music Album by Space-22"/>
+        
+        </div>
+        <div className={styles.homepageSlide}>
+        <Image src='/images/Nocturnal_TheAlbum.jpg' width={450} height={600} alt="Nocturnal - Music Album by Space-22"/>
+        </div>
       </div>
     </main>
   )
 }
+
+export default Home

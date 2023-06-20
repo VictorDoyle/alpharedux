@@ -1,0 +1,56 @@
+.mainNavigation {
+    background-color: #141414;
+    width: 100%;
+    padding: 2em;
+}
+
+.footerMain {
+    background-color: #141414;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 2em;
+    max-width: 100%;
+}
+
+.navLogo {
+    top: 2em;
+    left: 2em;
+    float: left;
+    position: absolute;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.5em;
+}
+
+.footerLogo {
+    left: 2em;
+    float: left;
+    position: absolute;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.2em;
+}
+
+.navLink {
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1.2em;
+}
+
+.navLinkFooter {
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1em;
+    right: 2em;
+    float: right;
+}
+
+.topRight {
+    top: 3.5em;
+    right: 2em;
+    float: right;
+    position: absolute;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 1em;
+}
