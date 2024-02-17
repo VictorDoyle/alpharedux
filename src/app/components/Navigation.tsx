@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Navigation() {
   return (
    <>
+   <a className="skip-link sr-text" href="#main">Skip To Main Content</a>
    <nav>
     <ul>
       <li>

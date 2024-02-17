@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import { Providers } from "./components/providers";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Alpha Redux",
@@ -17,13 +16,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
       <link rel="stylesheet" href="https://use.typekit.net/icg8xrp.css" />
       </head>
-      <body className={inter.className}>
+      <body>
         <Navigation/>
-        {children}
+        <Providers>{children}</Providers>
       <Footer />
       </body>
     </html>
