@@ -5,6 +5,8 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  font-family: var(--main-futura-font);
+  font-weight: var(--main-font-medium);
 }
 
 .description {
@@ -15,7 +17,6 @@
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
-  font-family: var(--font-mono);
 }
 
 .description a {
@@ -60,7 +61,7 @@
 }
 
 .card h2 {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 0.7rem;
 }
 
