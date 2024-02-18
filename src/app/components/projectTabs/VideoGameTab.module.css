@@ -1,0 +1,30 @@
+.videoGameTabPanel {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    gap: 1rem;
+}
+
+.videoGameList {
+    display: flex;
+    flex-direction: column;
+    background-color: #333; 
+}
+
+.game, .activeGame {
+    padding: 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+
+.activeGame {
+    background-color: #666; 
+}
+
+.gameDetails {
+    background-color: #222; 
+    color: white; 
+    padding: 1rem;
+}

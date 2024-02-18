@@ -1,0 +1,30 @@
+.techTabPanel {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    gap: 1rem;
+}
+
+.techIdeaList {
+    display: flex;
+    flex-direction: column;
+    background-color: #333; 
+}
+
+.techIdea, .activeTechIdea {
+    padding: 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+
+.activeTechIdea {
+    background-color: #666; 
+}
+
+.techIdeaDetails {
+    background-color: #222; 
+    color: white; 
+    padding: 1rem;
+}

@@ -1,0 +1,30 @@
+.rndTabPanel {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    gap: 1rem;
+}
+
+.rndTopicList {
+    display: flex;
+    flex-direction: column;
+    background-color: #333; 
+}
+
+.topic , .activeTopic {
+    padding: 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+
+.activeTopic {
+    background-color: #666; 
+}
+
+.topicDetails {
+    background-color: #222; 
+    color: white; 
+    padding: 1rem;
+}
