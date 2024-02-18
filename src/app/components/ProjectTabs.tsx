@@ -19,6 +19,7 @@ const ProjectTabs = () => {
                         <p>Here is example</p>
                     </>
                 );
+
             case 'MUSIC':
                 return (
                     <>
@@ -26,6 +27,15 @@ const ProjectTabs = () => {
                         <p>Here is text</p>
                     </>
                 );
+
+            case 'TECH':
+                return (
+                    <>
+                        <h2>tech incoming coming</h2>
+                        <p>Here is example</p>
+                    </>
+                );
+
             default:
                 return <div> add fallback tab heere</div>;
         }
