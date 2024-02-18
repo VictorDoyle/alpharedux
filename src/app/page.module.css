@@ -9,6 +9,11 @@
   font-weight: var(--main-font-medium);
 }
 
+.largeLogo {
+  margin: auto;
+  font-size: 10em !important;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;

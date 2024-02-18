@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-      <link rel="stylesheet" href="https://use.typekit.net/icg8xrp.css" />
+        <link rel="stylesheet" href="https://use.typekit.net/icg8xrp.css" />
       </head>
       <body>
-        <Navigation/>
+        <Navigation />
         <Providers>{children}</Providers>
-      <Footer />
+        <Footer />
       </body>
     </html>
   );

@@ -1,3 +1,4 @@
+/* SECTION: Root */
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
@@ -12,9 +13,12 @@
   --background-dark: #000000;
   --foreground-light: #fff;
 
-    /* fall back to dark theme */
-    --background: var(--background-dark);
-    --foreground: rgb(var(--foreground-light));
+  /* fall back to dark theme */
+  --background: var(--background-dark);
+  --foreground: rgb(var(--foreground-light));
+}
+html, body { 
+  height: 100% 
 }
 
 /* some pages will be light */
@@ -23,10 +27,52 @@
   --foreground: black;
 }
 
+/* SECTION: Navigation */
+
+.top-nav {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto; 
+  align-items: center;
+  list-style: none;
+  padding: 2.5rem;
+  font-size: 1.5em;
+}
+
+.nav-left, .nav-right {
+  display: contents;
+}
+
+.nav-right {
+  justify-self: end;
+  display: flex; 
+}
+
+.nav-right a {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* SECTION: FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.footer-randomText {
+  flex: 1;
+  text-align: center;
+}
+
+/* END */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  /* FIXME: override later */
+  font-family: var(--main-futura-font);
 }
 
 html,
@@ -41,7 +87,7 @@ a {
   text-decoration: none;
 }
 
-/* Accessibility */
+/* SECTION: Accessibility */
 .skip-link {
   position: absolute;
   left: -999px;
@@ -66,6 +112,32 @@ a {
   border-radius: 0;
   transition: left 0.3s ease;
 }
+
+.back-to-top {
+  position: fixed; 
+  right: -999px;
+  bottom: 20px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 100000;
+}
+
+.back-to-top:focus {
+  right: 20px;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  padding: 10px 15px;
+  background: #FFF;
+  color: #000000;
+  text-align: center;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0;
+  transition: right 0.3s ease;
+}
+
 
 .sr-text {
   position: absolute;

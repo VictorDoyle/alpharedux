@@ -3,9 +3,8 @@ import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <h1> ALPHA REDUX </h1>
-
-    </main>
+    <div className={styles.main}>
+      <h1 className={styles.largeLogo}> ALPHA REDUX </h1>
+    </div>
   );
 }
