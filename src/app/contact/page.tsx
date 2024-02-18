@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import styles from './page.module.css'
 
 export const metadata: Metadata = {
     title: 'AlphaRedux | Contact Us',
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 export default function Contact() {
     return (
         <>
-            <h1> Contact </h1>
+            <h1 className={styles.mainPageTitle}> CONTACT </h1>
         </>
     );
 }

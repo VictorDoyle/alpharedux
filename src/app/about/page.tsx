@@ -13,7 +13,7 @@ function About() {
     <>
       <ThemeSwitcher />
       <main className={styles.description}>
-        <h1> About us</h1>
+        <h1 className={styles.mainPageTitle}> ABOUT ALPHAREDUX</h1>
       </main>
     </>
   );
