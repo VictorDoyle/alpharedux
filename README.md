@@ -36,6 +36,8 @@ Runs from PR merge to main, will validate and lint build. If fails, merge is blo
 
 - Futura font weight only imported 300/500/700
 
+- Icons from https://react-icons.github.io/react-icons/icons/sl/ using the Simple Line Icons variant
+
 ---
 
 ## Legal Disclaimer
