@@ -1,4 +1,4 @@
-import ProjectTabs from '../components/ProjectTabs'
+import ProjectTabs from '../components/projectTabs/ProjectTabs_Master'
 import styles from './page.module.css';
 import type { Metadata } from 'next'
 

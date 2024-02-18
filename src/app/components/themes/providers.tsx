@@ -1,6 +1,10 @@
 'use client'
 import { ThemeProvider } from 'next-themes'
 
-export function Providers({ children }) {
+interface ProvidersProps {
+  children: React.ReactNode;
+}
+
+export function Providers({ children }: ProvidersProps) {
   return <ThemeProvider themes={['light', 'dark']} >{children}</ThemeProvider>
 }
