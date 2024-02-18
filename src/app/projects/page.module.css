@@ -1,0 +1,33 @@
+.pageMainTitle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tablistContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.tablist {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.tab {
+    background: none;
+    border: none;
+    padding: 1rem 1.5rem; 
+    text-align: left;
+    cursor: pointer;
+    margin-bottom: 0.5rem; 
+}
+
+.activeTab {
+    border-bottom: 1px solid #fff;
+}
+
+.tabPanel {
+    flex-grow: 1; 
+}

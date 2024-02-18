@@ -1,14 +1,9 @@
-import type { Metadata } from "next";
 import "./globals.css";
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import { Providers } from "./components/providers";
+import Navigation from "./components/navigation/Navigation";
+import Footer from "./components/navigation/Footer";
+import { Providers } from "./components/themes/providers";
 
 
-export const metadata: Metadata = {
-  title: "Alpha Redux",
-  description: "AlphaRedux's Main Website",
-};
 
 export default function RootLayout({
   children,
