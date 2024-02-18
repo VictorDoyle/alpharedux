@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 export default function Projects() {
     return (
         <main>
-            <h1 className="pageMainTitle"> PROJECTS </h1>
-            {/* Tabs */}
+            <h1 className={styles.pageMainTitle}> PROJECTS </h1>
+            {/* Tabs and tabpanels */}
             <ProjectTabs />
         </main>
     );
