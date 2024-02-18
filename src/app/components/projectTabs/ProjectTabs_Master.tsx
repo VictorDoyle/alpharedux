@@ -1,6 +1,6 @@
 'use client'
 import { useState } from 'react';
-import styles from '../projects/page.module.css';
+import styles from '../../projects/page.module.css';
 
 const ProjectTabs = () => {
     const tabs = ['VIDEO GAMES', 'MUSIC', 'TECH', 'R&D', 'ART'];
