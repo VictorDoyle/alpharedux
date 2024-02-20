@@ -1,6 +1,13 @@
 'use client'
 import { SetStateAction, useState } from 'react';
 import styles from './VideoGameTab.module.css';
+// atomic components for tabpanels
+import TowerGameMini from './videoGamesTab_Components/towerGame_mini';
+import SevenMinutesGameMini from './videoGamesTab_Components/sevenMinutesGame_mini';
+import RebirthGameMini from './videoGamesTab_Components/rebirthGame_mini';
+import AnomalyMiniGame from './videoGamesTab_Components/anomalyGame_mini';
+import BlackDossierMiniGame from './videoGamesTab_Components/blackDossierGame_mini';
+
 
 export default function VideoGameTab() {
     const videoGames = ['The Tower', '7 Minutes', 'The Black Dossier', 'The Anomaly', 'Rebirth',];
@@ -13,15 +20,35 @@ export default function VideoGameTab() {
     const renderVideoGameDetails = () => {
         switch (activeVideoGame) {
             case 'The Tower':
-                return <div>The tower game</div>;
+                return (
+                    <>
+                        <TowerGameMini />
+                    </>
+                )
             case '7 Minutes':
-                return <div>7 Minutes Game</div>;
+                return (
+                    <>
+                        <SevenMinutesGameMini />
+                    </>
+                )
             case 'The Black Dossier':
-                return <div> The Black Dossier </div>;
+                return (
+                    <>
+                        <BlackDossierMiniGame />
+                    </>
+                )
             case 'The Anomaly':
-                return <div>The Anomaly</div>;
+                return (
+                    <>
+                        <AnomalyMiniGame />
+                    </>
+                )
             case 'Rebirth':
-                return <div>Rebirth Game</div>;
+                return (
+                    <>
+                        <RebirthGameMini />
+                    </>
+                )
             default:
                 return <div>Select a game to see the details.</div>;
         }
