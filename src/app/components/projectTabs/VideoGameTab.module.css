@@ -1,13 +1,16 @@
+/* videoGameTabPanel 15% left and list items too so item show needs to match 30% for geometrical */
 .videoGameTabPanel {
     display: grid;
     grid-template-columns: 200px 1fr; 
     gap: 1rem;
+    margin-left: 15%;
 }
 
 .videoGameList {
     display: flex;
     flex-direction: column;
     background-color: #333; 
+    margin-left: 15%;
 }
 
 .game, .activeGame {
@@ -27,4 +30,5 @@
     background-color: #222; 
     color: white; 
     padding: 1rem;
+    margin-right: 30%;
 }

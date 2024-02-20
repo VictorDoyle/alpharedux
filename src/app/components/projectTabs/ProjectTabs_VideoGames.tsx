@@ -29,12 +29,13 @@ export default function VideoGameTab() {
 
     return (
         <div className={styles.videoGameTabPanel}>
-            <div className={styles.videoGameList}>
+            <div className={styles.videoGameList} role='tablist'>
                 {videoGames.map((game) => (
                     <button
                         key={game}
                         onClick={() => handleVideoGameClick(game)}
                         className={game === activeVideoGame ? styles.activeGame : styles.game}
+                        role='tab'
                     >
                         {game}
                     </button>

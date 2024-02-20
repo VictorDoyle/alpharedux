@@ -2,12 +2,14 @@
     display: grid;
     grid-template-columns: 200px 1fr; 
     gap: 1rem;
+    margin-left: 15%;
 }
 
 .techIdeaList {
     display: flex;
     flex-direction: column;
-    background-color: #333; 
+    background-color: #333;
+    margin-left: 15%;
 }
 
 .techIdea, .activeTechIdea {
@@ -27,4 +29,5 @@
     background-color: #222; 
     color: white; 
     padding: 1rem;
+    margin-right: 15%;
 }
