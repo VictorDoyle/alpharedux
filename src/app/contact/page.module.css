@@ -1,16 +1,19 @@
 .mainPageTitle {
     text-align: center;
+    padding-bottom: 1em;
 }
 
 .level2Heading {
     text-align: center;
-    padding-top: 1.3em;
+    padding-top: 1.5em;
     padding-bottom: 1em;
 }
 
 .paragraphUnderH2 {
     padding-bottom: 2em;
-    margin-left: 30%;
-    margin-right: 30%;
-    text-align:justify
+    text-align: center;
+}
+
+.contactEmailLink {
+    text-decoration: underline;
 }

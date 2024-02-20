@@ -1,0 +1,67 @@
+/* videoGameTabPanel 15% left and list items too so item show needs to match 30% for geometrical */
+.videoGameTabPanel {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    gap: 1rem;
+    margin-left: 15%;
+}
+
+.videoGameList {
+    display: flex;
+    flex-direction: column;
+    background-color: #333; 
+    margin-left: 15%;
+}
+
+.game, .activeGame {
+    padding: 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+
+.activeGame {
+    background-color: #666; 
+}
+
+.gameDetails {
+    background-color: #222; 
+    color: white; 
+    padding: 1rem;
+    margin-right: 30%;
+}
+
+/* sub components */
+.minifiedGameTitle {
+    margin-bottom: 0.5em;
+}
+
+
+/* image gallery in game preview */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 16px; 
+    padding: 16px;
+    max-width: 600px;
+    margin: auto; 
+}
+.galleryItem {
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+    overflow: hidden; 
+}
+  
+.galleryImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; 
+}
+  
+.galleryImage:hover {
+    transform: scale(1.05); 
+}

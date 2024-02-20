@@ -1,6 +1,11 @@
 'use client'
 import { useState } from 'react';
 import styles from '../../projects/page.module.css';
+import VideoGameTab from './ProjectTabs_VideoGames';
+import MusicTab from './ProjectTabs_Music';
+import TechTab from './ProjectTabs_Tech';
+import RnDTab from './ProjectTabs_RnD';
+import ArtTab from './ProjectTabs_Art';
 
 const ProjectTabs = () => {
     const tabs = ['VIDEO GAMES', 'MUSIC', 'TECH', 'R&D', 'ART'];
@@ -13,54 +18,45 @@ const ProjectTabs = () => {
     const renderTabContent = () => {
         switch (activeTab) {
             case 'VIDEO GAMES':
-                return (
-                    <>
-                        <h2>New video games coming</h2>
-                        <p>Here is example</p>
-                    </>
-                );
-
+                return <VideoGameTab />;
             case 'MUSIC':
-                return (
-                    <>
-                        <h2>New albums coming</h2>
-                        <p>Here is text</p>
-                    </>
-                );
-
+                return <MusicTab />;
             case 'TECH':
-                return (
-                    <>
-                        <h2>tech incoming coming</h2>
-                        <p>Here is example</p>
-                    </>
-                );
+                return <TechTab />;
+            case 'R&D':
+                return <RnDTab />;
+            case 'ART':
+                return <ArtTab />;
 
             default:
-                return <div> add fallback tab heere</div>;
+                // video games as fallback since [0]
+                return <VideoGameTab />;
         }
     };
 
     return (
         <>
-            {/* Tabs */}
-            <div role="tablist" className={styles.tablist}>
-                {tabs.map((tab) => (
-                    <button
-                        key={tab}
-                        role="tab"
-                        className={tab === activeTab ? styles.activeTab : styles.tab}
-                        onClick={() => handleTabClick(tab)}
-                        aria-selected={tab === activeTab}
-                    >
-                        {tab}
-                    </button>
-                ))}
-            </div>
+            <div className={styles.tablistContainer}>
+                {/* tabs */}
+                {/* TODO: Add arrow key loop on tablist buttons for accessibility */}
+                <div role="tablist" className={styles.tablist}>
+                    {tabs.map((tab) => (
+                        <button
+                            key={tab}
+                            role="tab"
+                            className={tab === activeTab ? styles.activeTab : styles.tab}
+                            onClick={() => handleTabClick(tab)}
+                            aria-selected={tab === activeTab}
+                        >
+                            {tab}
+                        </button>
+                    ))}
+                </div>
 
-            {/* Tabpanels */}
-            <div className={styles.tabPanel}>
-                {renderTabContent()}
+                {/* tabpanels */}
+                <div className={styles.tabPanel}>
+                    {renderTabContent()}
+                </div>
             </div>
         </>
     );

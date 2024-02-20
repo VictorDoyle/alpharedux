@@ -4,7 +4,7 @@ export default function Navigation() {
   return (
     <>
       <a className="skip-link sr-text" id="skipToMainLink" href="#main">Skip To Main Content</a>
-      <nav>
+      <nav aria-label="Main">
         <ul className="top-nav navList">
           <div className="nav-left">
             <li>

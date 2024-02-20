@@ -1,0 +1,33 @@
+.musicTabPanel {
+    display: grid;
+    grid-template-columns: 200px 1fr; 
+    gap: 1rem;
+    margin-left: 15%;
+}
+
+.musicAlbumList {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    margin-left: 15%;
+}
+
+.musicAlbum , .activeMusicAlbum {
+    padding: 1rem;
+    border: none;
+    background: none;
+    text-align: left;
+    color: white;
+    cursor: pointer;
+}
+
+.activeMusicAlbum {
+    background-color: #666; 
+}
+
+.musicAlbumDetails {
+    background-color: #222; 
+    color: white; 
+    padding: 1rem;
+    margin-right: 30%;
+}
